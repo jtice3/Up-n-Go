@@ -1,0 +1,205 @@
+<html lang="en-US">
+<title>Jesse's Mini Project 7</title>
+  
+<!-- Setting the "viewport" & defining charset to UTF-8 -->
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<bgcolor="white">
+</meta>
+    
+<!-- Adding a header & image-->
+<header><center><h1 id="title">
+&#10697;Welcome to my homepage! 
+<img src="http://kb4images.com/images/smiley/37223199-smiley-pics.jpg" width="40"></h1></center></header>
+  
+<h4 id="Animation" style="color:white">
+  The grand Canyon
+   </h4>  
+    
+<!-- Adding a <body> tag so I can omit my <head> tag -->
+<body>
+          
+<!-- Using a JS object to change source of an image -->
+  <img id="myImage" src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/26171952_10155967906842731_4947822399931627079_o.jpg?oh=ce8429ba64f1164ae52084b2213f4205&oe=5ADD319E" alt="Grand Canyon" style="width:400px">
+
+  <button onclick="document.getElementById('myImage').src='https://scontent.fslc1-2.fna.fbcdn.net/v/t31.0-8/26173695_10155967906882731_4931395376844272709_o.jpg?oh=2cff6b5fe24d96c88316b6f725eee4ae&oe=5ADB69FD'" alt="Grand Canyon" style="width:400px">Click here to view me at Grand Canyon</button>
+
+  <button onclick="document.getElementById('myImage').src='https://scontent.fslc1-2.fna.fbcdn.net/v/t31.0-8/26172860_10155967906887731_407456873197993603_o.jpg?oh=b615e9392dd4045e5beffc29309ce3c9&oe=5B1DD825'" alt="Grand Canyon" style="width:400px">Click here to view Katherine at Grand Canyon</button><br>
+
+<div><section>
+  <h3 id="Grand1" class="center" style="color:red"><b>The Grand Canyon:</h3></b>
+<h4 id="GCInfo">
+
+<!-- Using JS to create an array & print it -->
+<script>
+	var a = new Array(3);
+	a[0] = "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long,";
+	a[1] = " up to 18 miles (29km) wide,";
+	a[2] = " and a mile (1.6km) deep. ";  
+  document.write(a);
+</script>
+  
+<!-- Using JS to create a function to call -->
+<br>
+  <script>
+    function writeSentence() {
+        document.write("The Grand Canyon overwhelms our senses through its immense size.");
+    }
+</script></br></h4>
+  
+<!-- Using if/else statement & concatenation in JS to determine what to print -->
+  <script>
+    var x = 10;
+    var y = 20;
+    var z = x + y;
+    if (x != z) {
+      writeSentence();
+    }
+    else {
+      document.write(x + " * " + y + "= " + z);
+    }
+  </script>
+  
+<!-- Adding a section which includes the "nav" tag for set of links -->
+ <ul style="list-style-type:disc"><nav>
+   <li><a href="https://www.nps.gov/grca/index.htm" target="_blank">Grand Canyon National Park</a></li>
+   <li><a href="https://en.wikipedia.org/wiki/Grand_Canyon" target="_blank">Grand Canyon Wiki</a></li>
+   <li><a href="http://grandcanyonhistory.clas.asu.edu/history_science_geology.html" target="_blank">Grand Canyon Geology</a></li>
+   </ul></nav></section></div>
+
+<!-- Using JS to write -->
+<h4 id="GCInfo">
+  <script>
+document.write("This is the trail that we took when my wife and I backpacked the Grand Canyon.");
+  </script></h4>
+  
+  <!-- Adding a YouTube video using an i-Frame -->
+<br><iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/zGbTpvW29-I">
+</iframe>
+</br>  
+
+<!-- Using JS to show hidden elements -->
+<p id="demo" style="display:none">The Tonto trail</p>
+<br>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click me to reveal the name of this trail!</button><br><br>
+      
+ <!-- Radio buttons -->
+  How did you like my project?
+  <form>
+    <input type="radio" name="review" value="good"> Good<br>
+    <input type="radio" name="gender" value="decent"> Decent<br>
+    <input type="radio" name="gender" value="bad"> Bad<br>
+  </form>
+      
+<!-- Using JS in body -->
+<p id="SLC"></p>
+<script>
+document.getElementById("SLC").innerHTML = "My wife and I are both from around Salt Lake.  We grew up only a few miles from each other.";
+</script>
+
+<!-- Adding an "aside"-->
+<aside>
+  <h3 class="center">Salt Lake city</h4>
+  <p><a   href="https://www.google.com/maps/place/Salt+Lake+City,+UT/@40.7767833,-112.0605697,11z/data=!3m1!4b1!4m5!3m4!1s0x87523d9488d131ed:0x5b53b7a0484d31ca!8m2!3d40.7607793!4d-111.8910474" target="_blank">Salt Lake on Google Maps</a></p>
+</aside>     
+      
+<!-- Using variables in JS to form a sentence -->
+<h4 id="GCInfo">
+<script>
+  var words = "My friend Chance flying from San Diego to San Bernadino California.";
+  var moreWords = "This is the moment he let me take the controls for a few minutes.";
+  var sentence = words + moreWords;
+  document.write(sentence);
+  </script></h4>
+
+<!-- Using the figure/figcaption tag -->
+<figure>
+<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/26195757_10155967908992731_3349864685763734694_n.jpg?oh=28d6c0653a15d82f4319c89a89b662c8&oe=5B117881" alt="Flying near San Bernandino" width="304" height="228">
+<figcaption>Fig1. - Me flying a Cessna.</figcaption>
+</figure>
+
+<!-- Using a for-loop in JS -->
+<script>
+  for (i=0; i < 280; i++) {
+    document.write("-");
+  }
+</script>
+
+<!-- Adding a gallery -->
+<br>
+<div class="gallery">
+    <img src="https://images.pexels.com/photos/63553/pexels-photo-63553.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" alt="Grand Canyon" width="600" height="400">
+</div>
+
+<div class="gallery">
+    <img src="https://images.pexels.com/photos/415952/pexels-photo-415952.jpeg?h=350&auto=compress&cs=tinysrgb" alt="The Grand" width="600" height="400">
+</div>
+
+<div class="gallery">
+    <img src="https://images.pexels.com/photos/257352/pexels-photo-257352.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Mountains" width="600" height="400">
+</div><br></br>
+
+<!-- Adding a table -->
+ <table class ="hidden" style="width:75%">
+   <tr>
+     <th>Subject:</th>
+     <th>Instructor:</th>
+     <th>Title:</th>
+   </tr>
+   <tr>
+     <td>CSIS 1030</td>
+     <td>Wells, Lornakay</td>
+     <td>Foundations of Computing</td>
+   </tr>
+   <tr>
+     <td>CSIS 1200</td>
+     <td>Atashi, Zahra</td>
+     <td>Introduction to Networking</td>
+   </tr>
+   <tr>
+     <td>CSIS 1400</td>
+     <td>Posch, Margarethe</td>
+     <td>Fundamentals of Programming</td>
+   </tr>
+   <tr>
+     <td>CSIS 1430</td>
+     <td>Goulding, K. Todd</td>
+     <td>Internet and XHTML Fundamentals</td>
+   </tr>
+   <tr>
+     <td>MATH 1040</td>
+     <td>Oremus, Richard</td>
+     <td>Introduction to Statistics</td>
+   </tr>
+   
+<div class="fixed">
+  <h6 id="borderimg">Jesse Tice's HTML & CSS project</h3></div>
+   
+<!-- Home button -->
+<br>
+<img id="home" src="http://freevector.co/wp-content/uploads/2014/02/61689-home-button.png">
+<a href="https://codepen.io/jtice3/pen/wyZZjV">Home<br>
+
+<!-- Creating forms using JS & a submit button -->
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+  <body>
+    <form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+    </form></body>
+  
+<!-- Adding a footer -->
+<footer>
+  <p style="color:blue";>Page created by: Jesse Tice<br>
+  Contact information: <a href="mailto:jtice3@bruinmail.slcc.edu">jtice3@bruinmail.slcc.edu</a>.</p>
+</font>
+</footer>
+</html>
