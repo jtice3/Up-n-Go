@@ -1,20 +1,5 @@
 <html lang="en-US">
-<title>Jesse's Mini Project 7</title>
-  
-<!-- Setting the "viewport" & defining charset to UTF-8 -->
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<bgcolor="white">
-</meta>
-    
-<!-- Adding a header & image-->
-<header><center><h1 id="title">
-&#10697;Welcome to my homepage! 
-<img src="http://kb4images.com/images/smiley/37223199-smiley-pics.jpg" width="40"></h1></center></header>
-  
-<h4 id="Animation" style="color:white">
-  The grand Canyon
-   </h4>  
-    
+      
 <!-- Adding a <body> tag so I can omit my <head> tag -->
 <body>
           
@@ -71,59 +56,7 @@
   <script>
 document.write("This is the trail that we took when my wife and I backpacked the Grand Canyon.");
   </script></h4>
-  
-  <!-- Adding a YouTube video using an i-Frame -->
-<br><iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/zGbTpvW29-I">
-</iframe>
-</br>  
-
-<!-- Using JS to show hidden elements -->
-<p id="demo" style="display:none">The Tonto trail</p>
-<br>
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click me to reveal the name of this trail!</button><br><br>
       
- <!-- Radio buttons -->
-  How did you like my project?
-  <form>
-    <input type="radio" name="review" value="good"> Good<br>
-    <input type="radio" name="gender" value="decent"> Decent<br>
-    <input type="radio" name="gender" value="bad"> Bad<br>
-  </form>
-      
-<!-- Using JS in body -->
-<p id="SLC"></p>
-<script>
-document.getElementById("SLC").innerHTML = "My wife and I are both from around Salt Lake.  We grew up only a few miles from each other.";
-</script>
-
-<!-- Adding an "aside"-->
-<aside>
-  <h3 class="center">Salt Lake city</h4>
-  <p><a   href="https://www.google.com/maps/place/Salt+Lake+City,+UT/@40.7767833,-112.0605697,11z/data=!3m1!4b1!4m5!3m4!1s0x87523d9488d131ed:0x5b53b7a0484d31ca!8m2!3d40.7607793!4d-111.8910474" target="_blank">Salt Lake on Google Maps</a></p>
-</aside>     
-      
-<!-- Using variables in JS to form a sentence -->
-<h4 id="GCInfo">
-<script>
-  var words = "My friend Chance flying from San Diego to San Bernadino California.";
-  var moreWords = "This is the moment he let me take the controls for a few minutes.";
-  var sentence = words + moreWords;
-  document.write(sentence);
-  </script></h4>
-
-<!-- Using the figure/figcaption tag -->
-<figure>
-<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/26195757_10155967908992731_3349864685763734694_n.jpg?oh=28d6c0653a15d82f4319c89a89b662c8&oe=5B117881" alt="Flying near San Bernandino" width="304" height="228">
-<figcaption>Fig1. - Me flying a Cessna.</figcaption>
-</figure>
-
-<!-- Using a for-loop in JS -->
-<script>
-  for (i=0; i < 280; i++) {
-    document.write("-");
-  }
-</script>
-
 <!-- Adding a gallery -->
 <br>
 <div class="gallery">
@@ -138,63 +71,10 @@ document.getElementById("SLC").innerHTML = "My wife and I are both from around S
     <img src="https://images.pexels.com/photos/257352/pexels-photo-257352.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Mountains" width="600" height="400">
 </div><br></br>
 
-<!-- Adding a table -->
- <table class ="hidden" style="width:75%">
-   <tr>
-     <th>Subject:</th>
-     <th>Instructor:</th>
-     <th>Title:</th>
-   </tr>
-   <tr>
-     <td>CSIS 1030</td>
-     <td>Wells, Lornakay</td>
-     <td>Foundations of Computing</td>
-   </tr>
-   <tr>
-     <td>CSIS 1200</td>
-     <td>Atashi, Zahra</td>
-     <td>Introduction to Networking</td>
-   </tr>
-   <tr>
-     <td>CSIS 1400</td>
-     <td>Posch, Margarethe</td>
-     <td>Fundamentals of Programming</td>
-   </tr>
-   <tr>
-     <td>CSIS 1430</td>
-     <td>Goulding, K. Todd</td>
-     <td>Internet and XHTML Fundamentals</td>
-   </tr>
-   <tr>
-     <td>MATH 1040</td>
-     <td>Oremus, Richard</td>
-     <td>Introduction to Statistics</td>
-   </tr>
-   
-<div class="fixed">
-  <h6 id="borderimg">Jesse Tice's HTML & CSS project</h3></div>
-   
 <!-- Home button -->
 <br>
 <img id="home" src="http://freevector.co/wp-content/uploads/2014/02/61689-home-button.png">
-<a href="https://codepen.io/jtice3/pen/wyZZjV">Home<br>
-
-<!-- Creating forms using JS & a submit button -->
-<script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-</script>
-  <body>
-    <form name="myForm" action="/action_page.php"
-onsubmit="return validateForm()" method="post">
-Name: <input type="text" name="fname">
-<input type="submit" value="Submit">
-    </form></body>
+<a href="https://jtice3.github.io/Up-n-Go/">Home<br>
   
 <!-- Adding a footer -->
 <footer>
