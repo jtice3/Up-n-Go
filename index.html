@@ -1,48 +1,84 @@
+<!DOCTYPE html>
 <html lang="en-US">
       
-<!-- Adding a <body> tag so I can omit my <head> tag -->
-<body>
-          
-<!-- Using a JS object to change source of an image -->
-  <img id="myImage" src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/26171952_10155967906842731_4947822399931627079_o.jpg?oh=ce8429ba64f1164ae52084b2213f4205&oe=5ADD319E" alt="Grand Canyon" style="width:400px">
-
-  <button onclick="document.getElementById('myImage').src='https://scontent.fslc1-2.fna.fbcdn.net/v/t31.0-8/26173695_10155967906882731_4931395376844272709_o.jpg?oh=2cff6b5fe24d96c88316b6f725eee4ae&oe=5ADB69FD'" alt="Grand Canyon" style="width:400px">Click here to view me at Grand Canyon</button>
-
-  <button onclick="document.getElementById('myImage').src='https://scontent.fslc1-2.fna.fbcdn.net/v/t31.0-8/26172860_10155967906887731_407456873197993603_o.jpg?oh=b615e9392dd4045e5beffc29309ce3c9&oe=5B1DD825'" alt="Grand Canyon" style="width:400px">Click here to view Katherine at Grand Canyon</button><br>
-
-<div><section>
-  <h3 id="Grand1" class="center" style="color:red"><b>The Grand Canyon:</h3></b>
-<h4 id="GCInfo">
+<head>
+  <meta charset="UTF-8">
+  <!-- JS to help Browser support --!>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Showcase Website</title>
+<link rel="stylesheet" type="text/css" href="showcase.css">
+</head>
 
 <!-- Using JS to create an array & print it -->
-<script>
+<h3><script>
 	var a = new Array(3);
-	a[0] = "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long,";
-	a[1] = " up to 18 miles (29km) wide,";
-	a[2] = " and a mile (1.6km) deep. ";  
+	a[0] = "Welcome to Jesse's";
+	a[1] = " Travel,";
+	a[2] = " Pages";  
   document.write(a);
-</script>
-  
+</script></h3>
+
 <!-- Using JS to create a function to call -->
-<br>
+<br><h4>
   <script>
     function writeSentence() {
-        document.write("The Grand Canyon overwhelms our senses through its immense size.");
+        document.write("Trip iteneraries of places that I've been");
     }
 </script></br></h4>
+
+ <!-- Dropdown -->
+ <br>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+    .dropbtn {
+       background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+     .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+</style>
+</head>
+  <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png">Good</a>
+    <a href="https://i.ebayimg.com/images/g/T9wAAOSwd4tTurvB/s-l300.jpg">Decent</a>
+    <a href="https://free.clipartof.com/42-Free-Upset-Smiley.jpg">Bad</a><br><br>
+  </div>
   
-<!-- Using if/else statement & concatenation in JS to determine what to print -->
-  <script>
-    var x = 10;
-    var y = 20;
-    var z = x + y;
-    if (x != z) {
-      writeSentence();
-    }
-    else {
-      document.write(x + " * " + y + "= " + z);
-    }
-  </script>
   
 <!-- Adding a section which includes the "nav" tag for set of links -->
  <ul style="list-style-type:disc"><nav>
