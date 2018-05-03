@@ -40,6 +40,15 @@ p::after {
     border-image: url(http://www.i2clipart.com/cliparts/c/4/9/1/clipart-showcard-border-512x512-c491.png) 30 stretch;
 }
 
+/*Adding text as a "fixed" position*/
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    border: 1px solid #73AD21;
+}
+
 /* Adding text effects, hovering shows text 
 overflow.  Also used 2d transform (skew) & 3d transform (rotateX) */
 #GCInfo {
