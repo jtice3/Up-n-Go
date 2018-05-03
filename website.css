@@ -1,6 +1,58 @@
+/*Adding element, id & class Selectors
+* also changing font with web fonts, colors & used a gradient*/
+@font-face {
+   font-family: myFirstFont;
+    src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype');
+}
+
+#title {
+   font-family: myFirstFont;
+}
+p {
+    color: blue;
+}
+
+.center {
+  text-align: center;
+  color: brown;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+}
+
+p::before {
+    content: "**";
+}
+
+p::after {
+    content: "**"; 
+}
+
+#Grand1 {
+  color: brown;
+  text-decoration: underline;
+  background: linear-gradient(to bottom right, red, yellow);
+}
+
 /*Adding a border image*/
 #borderimg { 
     border: 10px solid transparent;
     padding: 15px;
     border-image: url(http://www.i2clipart.com/cliparts/c/4/9/1/clipart-showcard-border-512x512-c491.png) 30 stretch;
 }
+
+/* Adding text effects, hovering shows text 
+overflow.  Also used 2d transform (skew) & 3d transform (rotateX) */
+#GCInfo {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+    transform: skewX(12deg);
+}
+
+#GCInfo:hover {
+    text-overflow: inherit;
+    overflow: visible;
+    transform: rotateX(40deg);
+}
+
